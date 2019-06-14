@@ -1,0 +1,160 @@
+<!-- <form">
+  <h3>Upload documents and IDs</h3>
+  <input type="file" name="docs" id="docs" placeholder="Upload Documents" accept="image/pdf">
+  <input type="file" name="ids" id="ids" placeholder="Upload IDs" accept="image/*" multiple>
+  <button>Submit</button>
+</form> -->
+
+
+<!--Update Current Client-->
+
+<section>
+<legend>Update Current Client:</legend>
+
+<!--Applicant Info-->
+
+  <legend>Name in Which Applicant's Mail Will Be Received for Delivery to Agent.</legend>
+  <fieldset>
+    <label for="inputFirstName">First Name</label>
+      <input type="text" name="firstName" placeholder="First Name" required>
+    <label for="inputLastName">Last Name</label>
+      <input type="text" name="lastName" placeholder="Last Name" required>
+    <label for="inputAddress">Applicant's Home Address</label>
+      <input type="text" name="address" id="inputAddress" placeholder="Home Address" required>
+    <label>City</label>
+      <input type="text" name="city" id="inputCity" required>
+    <label for="inputState">State</label>
+      <select id="inputState" name="state" required>
+    <option selected disabled>Choose...</option>
+    <option type="text" maxlength="2" value="AL">AL</option>
+    <option type="text" maxlength="2" value="AK">AK</option>
+    <option type="text" maxlength="2" value="AR">AR</option>
+    <option type="text" maxlength="2" value="CA">CA</option>
+    <option type="text" maxlength="2" value="CO">CO</option>
+    <option type="text" maxlength="2" value="CT">CT</option>
+    <option type="text" maxlength="2" value="DE">DE</option>
+    <option type="text" maxlength="2" value="DC">DC</option>
+    <option type="text" maxlength="2" value="FL">FL</option>
+    <option type="text" maxlength="2" value="GA">GA</option>
+    <option type="text" maxlength="2" value="HI">HI</option>
+    <option type="text" maxlength="2" value="ID">ID</option>
+    <option type="text" maxlength="2" value="IL">IL</option>
+    <option type="text" maxlength="2" value="IN">IN</option>
+    <option type="text" maxlength="2" value="IA">IA</option>
+    <option type="text" maxlength="2" value="KS">KS</option>
+    <option type="text" maxlength="2" value="KY">KY</option>
+    <option type="text" maxlength="2" value="LA">LA</option>
+    <option type="text" maxlength="2" value="ME">ME</option>
+    <option type="text" maxlength="2" value="MD">MD</option>
+    <option type="text" maxlength="2" value="MA">MA</option>
+    <option type="text" maxlength="2" value="MI">MI</option>
+    <option type="text" maxlength="2" value="MN">MN</option>
+    <option type="text" maxlength="2" value="MS">MS</option>
+    <option type="text" maxlength="2" value="MO">MO</option>
+    <option type="text" maxlength="2" value="MT">MT</option>
+    <option type="text" maxlength="2" value="NE">NE</option>
+    <option type="text" maxlength="2" value="NV">NV</option>
+    <option type="text" maxlength="2" value="NH">NH</option>
+    <option type="text" maxlength="2" value="NJ">NJ</option>
+    <option type="text" maxlength="2" value="NM">NM</option>
+    <option type="text" maxlength="2" value="NY">NY</option>
+    <option type="text" maxlength="2" value="NC">NC</option>
+    <option type="text" maxlength="2" value="ND">ND</option>
+    <option type="text" maxlength="2" value="OH">OH</option>
+    <option type="text" maxlength="2" value="OK">OK</option>
+    <option type="text" maxlength="2" value="OR">OR</option>
+    <option type="text" maxlength="2" value="PA">PA</option>
+    <option type="text" maxlength="2" value="RI">RI</option>
+    <option type="text" maxlength="2" value="SC">SC</option>
+    <option type="text" maxlength="2" value="SD">SD</option>
+    <option type="text" maxlength="2" value="TN">TN</option>
+    <option type="text" maxlength="2" value="TX">TX</option>
+    <option type="text" maxlength="2" value="UT">UT</option>
+    <option type="text" maxlength="2" value="VT">VT</option>
+    <option type="text" maxlength="2" value="VA">VA</option>
+    <option type="text" maxlength="2" value="WA">WA</option>
+    <option type="text" maxlength="2" value="WV">WV</option>
+    <option type="text" maxlength="2" value="WI">WI</option>
+    <option type="text" maxlength="2" value="WY">WY</option>
+      </select>
+    <label>Zipcode</label>
+      <input type="text" name="zip" id="inputZip" maxlenght="5" required>
+    <label>Country</label>
+      <input type="text" name="country" required>
+    <label>Phone Number</label>
+      <input type="text" name="phone" placeholder="Phone Number" maxlength="10" required>
+    <label>Email</label>
+      <input type="email" name="email" placeholder="Email" required>
+  </fieldset>
+<!--Comapny Info-->
+
+  <legend>Company Information (Optional)</legend>
+    <fieldset>
+    <label>Comapny Name</label>
+      <input type="text" name="company">
+    <label>Company Address</label>
+      <input type="text" name="companyAddress"  placeholder="Company Address">
+    <label>City</label>
+      <input type="text" name="companyCity" placeholder="City">
+    <label>State</label>
+      <select name="companyState">
+    <option selected disabled>Choose...</option>
+    <option type="text" maxlength="2" value="AL">AL</option>
+    <option type="text" maxlength="2" value="AK">AK</option>
+    <option type="text" maxlength="2" value="AR">AR</option>
+    <option type="text" maxlength="2" value="CA">CA</option>
+    <option type="text" maxlength="2" value="CO">CO</option>
+    <option type="text" maxlength="2" value="CT">CT</option>
+    <option type="text" maxlength="2" value="DE">DE</option>
+    <option type="text" maxlength="2" value="DC">DC</option>
+    <option type="text" maxlength="2" value="FL">FL</option>
+    <option type="text" maxlength="2" value="GA">GA</option>
+    <option type="text" maxlength="2" value="HI">HI</option>
+    <option type="text" maxlength="2" value="ID">ID</option>
+    <option type="text" maxlength="2" value="IL">IL</option>
+    <option type="text" maxlength="2" value="IN">IN</option>
+    <option type="text" maxlength="2" value="IA">IA</option>
+    <option type="text" maxlength="2" value="KS">KS</option>
+    <option type="text" maxlength="2" value="KY">KY</option>
+    <option type="text" maxlength="2" value="LA">LA</option>
+    <option type="text" maxlength="2" value="ME">ME</option>
+    <option type="text" maxlength="2" value="MD">MD</option>
+    <option type="text" maxlength="2" value="MA">MA</option>
+    <option type="text" maxlength="2" value="MI">MI</option>
+    <option type="text" maxlength="2" value="MN">MN</option>
+    <option type="text" maxlength="2" value="MS">MS</option>
+    <option type="text" maxlength="2" value="MO">MO</option>
+    <option type="text" maxlength="2" value="MT">MT</option>
+    <option type="text" maxlength="2" value="NE">NE</option>
+    <option type="text" maxlength="2" value="NV">NV</option>
+    <option type="text" maxlength="2" value="NH">NH</option>
+    <option type="text" maxlength="2" value="NJ">NJ</option>
+    <option type="text" maxlength="2" value="NM">NM</option>
+    <option type="text" maxlength="2" value="NY">NY</option>
+    <option type="text" maxlength="2" value="NC">NC</option>
+    <option type="text" maxlength="2" value="ND">ND</option>
+    <option type="text" maxlength="2" value="OH">OH</option>
+    <option type="text" maxlength="2" value="OK">OK</option>
+    <option type="text" maxlength="2" value="OR">OR</option>
+    <option type="text" maxlength="2" value="PA">PA</option>
+    <option type="text" maxlength="2" value="RI">RI</option>
+    <option type="text" maxlength="2" value="SC">SC</option>
+    <option type="text" maxlength="2" value="SD">SD</option>
+    <option type="text" maxlength="2" value="TN">TN</option>
+    <option type="text" maxlength="2" value="TX">TX</option>
+    <option type="text" maxlength="2" value="UT">UT</option>
+    <option type="text" maxlength="2" value="VT">VT</option>
+    <option type="text" maxlength="2" value="VA">VA</option>
+    <option type="text" maxlength="2" value="WA">WA</option>
+    <option type="text" maxlength="2" value="WV">WV</option>
+    <option type="text" maxlength="2" value="WI">WI</option>
+    <option type="text" maxlength="2" value="WY">WY</option>
+      </select>
+    <label>Zipcode</label>
+      <input type="text" name="companyZip" maxlength="5">
+    <label>Country</label>
+      <input type="text" name="companyCountry">
+  </fieldset>
+</form>
+</section>
+<a href="/">Return</a>

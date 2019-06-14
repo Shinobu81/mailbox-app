@@ -1,0 +1,15 @@
+<section>
+  <label>DETAILS</label>
+  <form method="GET" action="details">
+    <input type="text" name="pmb">
+    <button>submit</button>
+  </form>
+Customer:
+{{#if pmb}}
+  <li>PMB#: {{pmb:pmb}}</li>
+  <li>Term: {{pmb:term}}</li>
+  <li>Last Name: {{pmb:lastName}}</li>
+  <li>First Name: {{pmb:firstName}}</li>
+  <li>Company: {{pmb:company}}</li>
+{{/if}}
+</section>

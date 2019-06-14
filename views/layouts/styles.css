@@ -1,0 +1,10 @@
+*{
+    margin:0;
+    padding:0;
+}
+.sidebar {
+    background-color: rgb(1, 57, 114);
+}
+li {
+    list-style-type: none;
+}

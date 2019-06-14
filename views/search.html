@@ -1,0 +1,16 @@
+<section>
+    <label>SEARCH</label>
+    <form method="GET" action="search">
+      <input type="text" name="pmb">
+      <button>submit</button>
+    </form>
+  {{#if pmb}}
+  <h3>Details for {{pmb.pmb}}: {{pmb.lastName}}, {{pmb.firstName}}</h3>
+    <li>PMB: {{ pmb.pmb }}</li>
+    <li>Date:Opened: {{pmb.openDate}}</li>
+    <li>Term: {{pmb.term}}</li>
+    <li>Last Name: {{ pmb.lastName }}</li>
+    <li>First Name: {{ pmb.firstName }}</li>
+  {{else}}
+    not found
+  {{/if}}
