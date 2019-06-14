@@ -12,9 +12,21 @@ app.set('port', process.env.PORT || 3000)
 app.use(express.static(__dirname + '/public'))
 app.use(bodyParser.urlencoded({extended: true}))
 
+app.get('/', (req, res) => {
+  res.render('main')
+})
+
 //GETS create form
 app.get('/create', (req, res) => {
   res.render('create')
+})
+
+//POSTS new customer data
+app.post('/details', (req, res) => {
+  let appInfo = new Mailbox(req.body)
+  appInfo.save().then(item => {
+    res.render('details', {pmb:req.body})
+  })
 })
 
 //GETS search form & process it
@@ -29,6 +41,8 @@ app.get('/search', (req, res) => {
 app.get('/update', (req, res) => {
   res.render('update')
 })
+
+//POST updated info for existing customer
 
 //GETS customer to be deleted
 app.get('/delete', (req, res) => {

@@ -1,13 +1,14 @@
-  <h1>Delete Page</h1>
-  <h3>Search</h3>
+<section>
+  <a href="/">Return</a>
+  <div>
   <form method="GET" action="/details">
     <input type="text" name="pmb" placeholder="pmb">
     <submit type="button"">Search</submit>
   </form>
-  </form>
-
+  </div>
+  <div>
     {{#if applicantInfo.delete}}
-  <h2>{{applicantInfo.pmb}} deleted</h2>
+      <h2>{{applicantInfo.pmb}} deleted</h2>
     {{/if}}
-
-<a href="/">Return</a>
+  </div>
+</section>
